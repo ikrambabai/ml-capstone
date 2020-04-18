@@ -109,7 +109,7 @@ def rename_files(source):
 
 
 def do_all():
-    classified_images = '/Users/fi241c/dev/machine-learning/ml-capstone/images-manual-classified'
+    classified_images = '/Users/fi241c/dev/machine-learning/ml-capstone/image-low-separated'
 
     final = '/Users/fi241c/dev/machine-learning/ml-capstone/images'
     train_folder = final + '/train'
