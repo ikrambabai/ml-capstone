@@ -98,8 +98,12 @@ def rename_files(source):
             continue
         counter = 1
         for file in os.listdir(source + "/" + directory):
+            if file.startswith('.'):
+                continue
+
             old_path = source + "/" + directory + "/" + file
-            new_name = source + "/" + directory + "/" + directory + "_" + str(counter) + ".jpg"
+            # new_name = source + "/" + directory + "/" + directory + "_" + str(counter) + ".jpg"
+            new_name = source + "/" + directory + "/" + file + "_" + str(counter) + ".jpg"
             print('Renamed {} to {}'.format(old_path, new_name))
             os.rename(old_path, new_name)
             counter = counter + 1
