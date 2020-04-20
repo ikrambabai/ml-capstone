@@ -7,8 +7,8 @@ import os
 import shutil
 
 size = 300, 300
-source = '/Users/fi241c/dev/machine-learning/ml-capstone/captured-images'
-destination = '/Users/fi241c/dev/machine-learning/ml-capstone/resized-images'
+source = '/Users/fi241c/dev/machine-learning/capstone-images/batch2-organized/1_by_2_triangle'
+destination = '/Users/fi241c/dev/machine-learning/capstone-images/batch2-organized/1_by_2_triangle_R'
 
 if os.path.exists(destination) and os.path.isdir(destination):
     print('Deleting destination folder' + destination)
